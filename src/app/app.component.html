@@ -1,0 +1,14 @@
+<div class="conteudo" *ngIf="planetaSelecionado">
+  <img class="terra" [src]="planetaSelecionado.imagem" alt="Planeta Terra">
+  <p>Nome: <strong>{{planetaSelecionado.nome}}</strong></p>
+  <p>Temperatura Média: <strong>{{planetaSelecionado.temp}}</strong></p>
+  <p>Diâmetro: <strong>{{planetaSelecionado.diam}} Km</strong></p>
+  <p>Tamanho: <strong>{{planetaSelecionado.tamanho}}</strong></p>
+  <p>Duração do Dia: <strong>{{planetaSelecionado.dia}}</strong></p>
+  <p>Duração do Ano: <strong>{{planetaSelecionado.ano}}</strong></p>
+  <p>Curiosidade: {{planetaSelecionado.curiosidade}} </p>
+</div>
+<div *ngFor="let planeta of planetas; index as i">
+  <img (click)="clickOnPlanet(planeta)" class="terra animation-{{i}}" [src]="planeta.imagem" alt="Planeta Terra">
+</div>
+

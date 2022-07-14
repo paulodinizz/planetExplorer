@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+.creditos {
+  font-size: 50%;
+  position: absolute;
+  bottom: 0;
+}
+
+body{
+  background-image: url('https://drive.google.com/uc?id=1rN4M5GvAcNF32XLq6O76tpsVEvQ5P2bD');
+  background-size: cover;
+  color: white;
+  font-family: 'Patrick Hand', cursive;
+}
+
+@media (max-width: 767px){
+  html body{
+    background-image: url('https://drive.google.com/uc?id=1cm27lEc862JFE00Nxy-sSozdYxbeiMBy') ;
+  }
+}
